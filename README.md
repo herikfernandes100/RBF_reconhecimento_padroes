@@ -1,1 +1,3 @@
 # RBF_reconhecimento_padroes
+
+em criação...
