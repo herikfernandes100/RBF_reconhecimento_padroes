@@ -20,3 +20,9 @@ class CamadaSaida:
             soma += x[i] * self.pesos[i]
 
         return soma
+    def atualizar_pesos(self, x, erro, taxa_aprendizado):
+
+        for i in range(len(self.pesos)):
+            self.pesos[i] += taxa_aprendizado * erro * x[i]
+
+        self.bias += taxa_aprendizado * erro
